@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.game-box {
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    margin: 3rem auto;
+}
+
+.obstacle {
+    height: 50px;
+    width: 35px;
+    background-color: red;
+    position: relative;
+    top: 250px;
+    left: 565px;
+    animation: move 1s linear infinite;
+}
+
+.dinosor {
+    height: 80px;
+    width: 40px;
+    position: relative;
+    top: 170px;
+}
+
+.dinosor img {
+    height: 73px;
+    width: 70px;
+}
+
+@keyframes move {
+    0% {
+        left: 565px;
+    }
+    100% {
+        left: 0px;
+    }
+}
+
+#result {
+    height: 200px;
+    width: 400px;
+    background-color: #ff8928;
+    margin: 3rem auto;
+    text-align: center;
+    border-radius: 20px;
+    display: none;
+}
+
+#score {
+    font-size: 2.2rem;
+    color: white;
+}
+
+#btn {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: cyan;
+    font-size: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+#result h1 {
+    color: red;
+}
